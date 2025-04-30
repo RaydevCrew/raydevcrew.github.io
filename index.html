@@ -35,48 +35,48 @@
   <img src="AboutUs.png" alt="About The Company" style="width: 100%; display: block;">
   <img src="Filler1.png" alt="Filler Image" style="width: 100%; display: block;">
 
-<div background="Portfolio.png" style="
-  width: 100%;
-  min-height: 100vh;
+<div style="
   background-image: url('Portfolio.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100vh;
 ">
-  <div style="
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.8);
-  ">
-    <!-- Clickable Image Button -->
-    <a href="https://www.roblox.com/games/18520482415/Simple-RNG-SPRING" target="_blank">
-      <img src="SimpleRNG.png" alt="Simple RNG" style="
-        width: 80px;
-        height: auto;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: transform 0.3s;"
-        onmouseover="this.style.transform='scale(1.2)';"
-        onmouseout="this.style.transform='scale(1)'">
-    </a>
-
-    <!-- YouTube Embed -->
-    <iframe width="360" height="202"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-      title="YouTube video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <table style="width: 100%; height: 100%;">
+    <tr>
+      <td style="text-align: center;">
+        <!-- Inner layout with button and video side by side -->
+        <table style="margin: 0 auto;">
+          <tr>
+            <!-- Button on the left -->
+            <td style="padding: 20px;">
+              <a href="https://www.roblox.com/games/18520482415/Simple-RNG-SPRING" target="_blank">
+                <img src="SimpleRNG.png" alt="Simple RNG" style="
+                  width: 80px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  transition: transform 0.3s;"
+                  onmouseover="this.style.transform='scale(1.2)';"
+                  onmouseout="this.style.transform='scale(1)'">
+              </a>
+            </td>
+            <!-- YouTube video on the right -->
+            <td style="padding: 20px;">
+              <iframe width="360" height="202"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </div>
-
 
   <img src="Footer2.png" alt="Footer" style="width: 100%; display: block;">
 
