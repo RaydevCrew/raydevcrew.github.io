@@ -3,12 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Roblox Game Studio</title>
+  <style>
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      pointer-events: none; /* So the image below is still clickable if needed */
+    }
+  </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff;">
+
   <img src="Header.png" alt="Header" style="width: 100%; display: block;">
   <img src="WeAreARobloxStudio.png" alt="We Are A Roblox Studio" style="width: 100%; display: block;">
-  <img src="AboutUs.png" alt="About The Company" style="width: 100%; display:block;">
-  <img src="Filler1.png" alt="About The Company" style="width: 100%; display:block;">
+  <img src="AboutUs.png" alt="About The Company" style="width: 100%; display: block;">
+  <img src="Filler1.png" alt="Filler Image" style="width: 100%; display: block;">
+
+  <div class="image-container">
+    <img src="Portfolio.png" alt="Portfolio">
+    <div class="overlay">This is an overlay</div>
+  </div>
+
   <img src="Footer.png" alt="Footer" style="width: 100%; display: block;">
+
 </body>
 </html>
