@@ -30,7 +30,7 @@
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff;">
 
-<!-- Loading Screen (initially visible) -->
+<!-- Loading Screen (Overlay) -->
 <div id="loading-screen" style="
   position: fixed;
   top: 0;
@@ -49,54 +49,15 @@
   <div style="border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
 </div>
 
-<!-- Main Content (hidden initially) -->
-<div id="main-content" style="display: none;">
-  <div style="
-    background-image: url('Portfolio.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-  ">
-    <table style="width: 100%; height: 100%;">
-      <tr>
-        <td style="text-align: center;">
-          <h1 style="
-            font-family: Arial, sans-serif;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-          ">Highlights</h1>
-          <table style="margin: 0 auto; background: rgba(255, 255, 255, 0.4); border-radius: 16px; padding: 20px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">
-            <tr>
-              <td style="padding: 30px;">
-                <a href="https://www.roblox.com/games/18520482415/Simple-RNG-SPRING" target="_blank">
-                  <img src="SimpleRNG.png" alt="Simple RNG" style="width: 250px; border-radius: 5%; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)'">
-                </a>
-              </td>
-              <td style="padding: 20px;">
-                <iframe width="360" height="202" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>
-
 <script>
-  // Wait for 3 seconds before hiding the loading screen and displaying the main content
+  // Wait for 3 seconds before hiding the loading screen overlay
   window.onload = function() {
     setTimeout(function() {
-      // Hide the loading screen and show the main content
+      // Hide the loading screen overlay after 3 seconds
       document.getElementById("loading-screen").style.opacity = "0";
-      document.getElementById("main-content").style.display = "block";
     }, 3000); // 3000 milliseconds = 3 seconds
   };
 </script>
-
 
   <img src="Header.png" alt="Header" style="width: 100%; display: block;">
   <img src="WeAreARobloxStudio.png" alt="We Are A Roblox Studio" style="width: 100%; display: block;">
