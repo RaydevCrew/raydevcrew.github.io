@@ -24,13 +24,12 @@
       font-weight: bold;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       text-align: center;
-      pointer-events: none; /* So the image below is still clickable if needed */
+      pointer-events: none;
     }
   </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff;">
 
-<!-- Loading Overlay -->
 <div id="loading-screen" style="
   position: fixed;
   top: 0;
@@ -46,7 +45,6 @@
   opacity: 1;
   transition: opacity 0.5s ease;
 ">
-  <!-- Spinner -->
   <div style="
     border: 8px solid #f3f3f3;
     border-top: 8px solid #3498db;
@@ -57,7 +55,6 @@
   "></div>
 </div>
 
-<!-- Spinner Keyframes (HTML-only way) -->
 <style>
   @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -70,28 +67,22 @@
 </style>
 
 <script>
-  // Prevent scrolling initially
   document.body.classList.add('loading');
 
   window.onload = function () {
     setTimeout(function () {
-      // Fade out loading screen
       const loader = document.getElementById('loading-screen');
       loader.style.opacity = '0';
-
-      // Allow scrolling again
       document.body.classList.remove('loading');
-
-      // Remove loader from layout after fade-out completes
       setTimeout(() => loader.style.display = 'none', 500);
     }, 3000);
   };
 </script>
 
-  <img src="Header.png" alt="Header" style="width: 100%; display: block;">
-  <img src="WeAreARobloxStudio.png" alt="We Are A Roblox Studio" style="width: 100%; display: block;">
-  <img src="AboutUs.png" alt="About The Company" style="width: 100%; display: block;">
-  <img src="Filler1.png" alt="Filler Image" style="width: 100%; display: block;">
+<img src="Header.png" alt="Header" style="width: 100%; display: block;">
+<img src="WeAreARobloxStudio.png" alt="We Are A Roblox Studio" style="width: 100%; display: block;">
+<img src="AboutUs.png" alt="About The Company" style="width: 100%; display: block;">
+<img src="Filler1.png" alt="Filler Image" style="width: 100%; display: block;">
 
 <div style="
   background-image: url('Portfolio1.png');
@@ -104,17 +95,14 @@
   <table style="width: 100%; height: 100%;">
     <tr>
       <td style="text-align: center;">
-        <!-- Inner layout with button and video side by side -->
-        <table style=" margin: 0 auto;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
-  padding: 20px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);">
-
+        <table style="margin: 0 auto;
+          background: rgba(255, 255, 255, 0.25);
+          border-radius: 16px;
+          padding: 20px;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.3);">
           <tr>
-            <!-- Button on the left -->
             <td style="padding: 30px;">
               <a href="https://www.roblox.com/games/18520482415/Simple-RNG-SPRING" target="_blank">
                 <img src="SimpleRNG.png" alt="Simple RNG" style="
@@ -126,7 +114,6 @@
                   onmouseout="this.style.transform='scale(1)'">
               </a>
             </td>
-            <!-- YouTube video on the right -->
             <td style="padding: 20px;">
               <iframe width="360" height="202"
                 src="https://www.youtube.com/embed/0m0NpeGz7l4"
@@ -142,6 +129,12 @@
     </tr>
   </table>
 </div>
+
+<img src="Footer2.png" alt="Footer" style="width: 100%; display: block;">
+
+</body>
+</html>
+
 
   <img src="Footer2.png" alt="Footer" style="width: 100%; display: block;">
 
