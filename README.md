@@ -1,5 +1,4 @@
 # rdcr.github.io
 
-Hey! If you are reading this, you're either looking at the GitHub for our website or you have found your way into our server files.
-
-I dont really know what else to say here. Bye.
+# HEY!
+Welcome to the GitHub Repo for the rdcr website! Here is the code and images. We are always adding more to the website, check back later!
