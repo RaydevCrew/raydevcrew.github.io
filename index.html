@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <style>
+  @media (max-width: 768px) {
+    #mobile-warning {
+      display: block;
+    }
+    body > *:not(#mobile-warning) {
+      display: none !important;
+    }
+  }
+</style>
+
   <meta charset="UTF-8">
   <title>Roblox Game Studio</title>
   <style>
@@ -29,6 +41,22 @@
   </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff;">
+<div id="mobile-warning" style="
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40vh;
+  z-index: 10000;">
+  Website not viewable on mobile. Please wait until we release the mobile version.
+</div>
 
 <div id="loading-screen" style="
   position: fixed;
