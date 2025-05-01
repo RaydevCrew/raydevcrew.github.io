@@ -159,6 +159,23 @@
 </div>
 
 <img src="Footer2.png" alt="Footer" style="width: 100%; display: block;">
+<script>
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  if (isMobileDevice()) {
+    document.getElementById('mobile-warning').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Hide all other content
+    Array.from(document.body.children).forEach(child => {
+      if (child.id !== 'mobile-warning') {
+        child.style.display = 'none';
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
